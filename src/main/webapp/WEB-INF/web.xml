@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>Sparsh</display-name>
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>doctorlogin</servlet-name>
+		<servlet-class>com.servlets.DoctorLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doctorlogin</servlet-name>
+		<url-pattern>/DoctorLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doctorregister</servlet-name>
+		<servlet-class>com.servlets.DoctorRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doctorregister</servlet-name>
+		<url-pattern>/DoctorRegister</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>patientlogin</servlet-name>
+		<servlet-class>com.servlets.PatientLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>patientlogin</servlet-name>
+		<url-pattern>/PatientLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>patientregister</servlet-name>
+		<servlet-class>com.servlets.PatientRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>patientregister</servlet-name>
+		<url-pattern>/PatientRegister</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>bookappointment</servlet-name>
+		<servlet-class>com.servlets.BookAppointment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>bookappointment</servlet-name>
+		<url-pattern>/BookAppointment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addschedule</servlet-name>
+		<servlet-class>com.servlets.AddSchedule</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addschedule</servlet-name>
+		<url-pattern>/AddSchedule</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteschedule</servlet-name>
+		<servlet-class>com.servlets.DeleteSchedule</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteschedule</servlet-name>
+		<url-pattern>/DeleteSchedule</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<servlet>
+		<servlet-name>receptionlogin</servlet-name>
+		<servlet-class>com.servlets.ReceptionLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>receptionlogin</servlet-name>
+		<url-pattern>/ReceptionLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>receptionregister</servlet-name>
+		<servlet-class>com.servlets.ReceptionRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>receptionregister</servlet-name>
+		<url-pattern>/ReceptionRegister</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>addpatient</servlet-name>
+		<servlet-class>com.servlets.AddPatient</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addpatient</servlet-name>
+		<url-pattern>/AddPatient</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>updatepatient</servlet-name>
+		<servlet-class>com.servlets.UpdatePatient</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updatepatient</servlet-name>
+		<url-pattern>/UpdatePatient</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>deletepatient</servlet-name>
+		<servlet-class>com.servlets.DeletePatient</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deletepatient</servlet-name>
+		<url-pattern>/DeletePatient</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>com.servlets.LogOut</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/LogOut</url-pattern>
+	</servlet-mapping>
+	
+
+</web-app>
