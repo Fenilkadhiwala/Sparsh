@@ -134,11 +134,12 @@ if (session2 == null || session2.getAttribute("isLoggedIn") == null) {
 		</tbody>
 	</table>
 </body>
+
 <script>
     const searchInput = document.getElementById("searchInput");
     const tableBody = document.getElementById("tableBody");
     const rows = tableBody.getElementsByTagName("tr");
-
+ // lkjsdlkasd
     searchInput.addEventListener("keyup", () => {
       const filter = searchInput.value.toLowerCase();
       for (let i = 0; i < rows.length; i++) {
